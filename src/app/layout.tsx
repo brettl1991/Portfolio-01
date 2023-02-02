@@ -9,16 +9,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  console.log(children);
   return (
     <html>
       <body>
         <GlobalStyle />
         <Box>
           <Navbar />
+          {children}
+          <footer />
         </Box>
-        {children}
-        <footer />
       </body>
     </html>
   );
