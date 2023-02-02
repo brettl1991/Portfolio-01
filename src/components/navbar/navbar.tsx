@@ -1,6 +1,7 @@
 import Link from "next/link";
 
-import React, { useState } from "react";
+import * as S from "./navbar.style";
+import { usePathname } from "next/navigation";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
@@ -8,16 +9,18 @@ const MENU_LIST = [
   { text: "Contact", href: "/contact" },
 ];
 const Navbar = () => {
+  const path = usePathname();
+  console.log(path);
   return (
-    <header>
-      <nav>
+    <>
+      <S.NavBar>
         {MENU_LIST.map(({ href, text }) => (
-          <Link key={text} href={href}>
+          <S.NavBarLink key={text} href={href}>
             {text}
-          </Link>
+          </S.NavBarLink>
         ))}
-      </nav>
-    </header>
+      </S.NavBar>
+    </>
   );
 };
 
