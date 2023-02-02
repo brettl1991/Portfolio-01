@@ -10,12 +10,12 @@ const MENU_LIST = [
 ];
 const Navbar = () => {
   const path = usePathname();
-  console.log(path);
+
   return (
     <>
       <S.NavBar>
         {MENU_LIST.map(({ href, text }) => (
-          <S.NavBarLink key={text} href={href}>
+          <S.NavBarLink key={text} href={href} pathName={path}>
             {text}
           </S.NavBarLink>
         ))}

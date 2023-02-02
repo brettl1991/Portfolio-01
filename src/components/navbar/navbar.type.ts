@@ -4,6 +4,4 @@ export type navbarType = {
   children?: ReactNode;
 };
 
-export type StyleNavbarTypes = {
-  pathname?: string;
-};
+export type StyleNavbarTypes = { pathName: string | null };

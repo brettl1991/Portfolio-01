@@ -1,20 +1,26 @@
 import Link from "next/link";
+
 import styled from "styled-components";
+import { StyleNavbarTypes } from "./navbar.type";
 
 export const NavBar = styled.nav`
-  padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 50px;
+
+  flex-direction: column;
+
+  text-align: center;
+
   background: #63d471;
 `;
-export const NavBarLink = styled(Link)`
-  color: #333;
+export const NavBarLink = styled(Link)<StyleNavbarTypes>`
+  width: 100%;
+  margin: 0 0.5rem;
+  padding: 0.5rem 0;
+  color: ${(props) => (props.href === props.pathName ? "#987" : "#fff")};
+  background-color: ${(props) =>
+    props.href === props.pathName ? "#333" : "#eaaa00"};
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  padding: 5px;
-  cursor: pointer;
-  &.active {
-    color: #000000;
-  }
 `;
