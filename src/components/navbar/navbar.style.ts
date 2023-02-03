@@ -17,9 +17,9 @@ export const NavBarLink = styled(Link)<StyleNavbarTypes>`
   width: 100%;
   margin: 0 0.5rem;
   padding: 0.5rem 0;
-  color: ${(props) => (props.href === props.pathName ? "#987" : "#fff")};
-  background-color: ${(props) =>
-    props.href === props.pathName ? "#333" : "#eaaa00"};
+  color: ${({ href, $pathName }) => (href === $pathName ? "#987" : "#fff")};
+  background-color: ${({ href, $pathName }) =>
+    href === $pathName ? "#333" : "#eaaa00"};
   font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;

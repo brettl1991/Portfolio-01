@@ -15,7 +15,7 @@ const Navbar = () => {
     <>
       <S.NavBar>
         {MENU_LIST.map(({ href, text }) => (
-          <S.NavBarLink key={text} href={href} pathName={path}>
+          <S.NavBarLink key={text} href={href} $pathName={path}>
             {text}
           </S.NavBarLink>
         ))}
