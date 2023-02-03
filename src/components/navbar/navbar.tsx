@@ -4,8 +4,11 @@ import * as S from "./navbar.style";
 import { usePathname } from "next/navigation";
 
 const MENU_LIST = [
-  { text: "Home", href: "/" },
-  { text: "About Us", href: "/about" },
+  { text: "Welcome", href: "/" },
+  { text: "About Me", href: "/about" },
+  { text: "Resume", href: "/resume" },
+  { text: "Projects", href: "/projects" },
+  { text: "Blog", href: "/blog" },
   { text: "Contact", href: "/contact" },
 ];
 const Navbar = () => {
