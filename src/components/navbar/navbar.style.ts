@@ -8,7 +8,7 @@ export const NavBar = styled.nav`
   align-items: center;
 
   flex-direction: column;
-
+  justify-content: space-around;
   text-align: center;
 
   background: #63d471;
