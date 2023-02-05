@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Navbar } from "@/components";
+import { Background, Box, Navbar } from "@/components";
 
 import { GlobalStyle } from "../style/global.style";
 
@@ -12,8 +12,9 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <GlobalStyle />
+        <Background />
         <Box>
+          <GlobalStyle />
           <Navbar />
           {children}
           <footer />

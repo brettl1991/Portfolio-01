@@ -9,8 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    color: #333;
-    background-color: red;
+    color: #6B7688;
+    background-color: #E8EEF4;
     margin: 0;
     padding: 0;
   }

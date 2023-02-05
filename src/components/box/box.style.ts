@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Box = styled.div`
   display: flex;
-
+  position: relative;
   justify-content: flex-start;
   height: 60vh;
 
@@ -11,5 +11,5 @@ export const Box = styled.div`
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.9);
 `;

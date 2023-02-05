@@ -11,15 +11,15 @@ export const NavBar = styled.nav`
   justify-content: space-around;
   text-align: center;
 
-  background: #63d471;
+  background: rgba(107, 118, 136, 0.1);
 `;
 export const NavBarLink = styled(Link)<StyleNavbarTypes>`
   width: 100%;
   margin: 0 0.5rem;
   padding: 0.5rem 0;
-  color: ${({ href, $pathName }) => (href === $pathName ? "#987" : "#fff")};
+  color: ${({ href, $pathName }) => (href === $pathName ? "#fff" : "#6B7688")};
   background-color: ${({ href, $pathName }) =>
-    href === $pathName ? "#333" : "#eaaa00"};
+    href === $pathName ? "#F06292" : ""};
   font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
