@@ -48,7 +48,7 @@ export const BackgroundStyle = styled.div`
   #stroke3 {
     stroke-dasharray: 1000;
     stroke-dashoffset: 400;
-    animation: ${dash} 3s linear forwards;
+    animation: ${dash} 3s linear infinite;
   }
 
   .lines {
@@ -63,42 +63,42 @@ export const BackgroundStyle = styled.div`
     left: 1293px;
     top: -700px;
     opacity: 0;
-    animation: ${fadein} 0.5s 3s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .mcircle5 {
     position: absolute;
     left: 980.5px;
     top: -700px;
     opacity: 0;
-    animation: ${fadein} 0.5s 3s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .mcircle4 {
     position: absolute;
     left: 692px;
     top: -700px;
     opacity: 0;
-    animation: ${fadein} 0.5s 3s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .mcircle3 {
     position: absolute;
     left: 441px;
     top: -700px;
     opacity: 0;
-    animation: ${fadein} 0.5s 3s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .mcircle2 {
     position: absolute;
     left: 306.5px;
     top: -700px;
     opacity: 0;
-    animation: ${fadein} 0.5s 3s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .mcircle1 {
     position: absolute;
     left: 115px;
     top: -700px;
     opacity: 0;
-    animation: ${fadein} 0.5s 3s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
 
   .circle15 {
@@ -106,49 +106,49 @@ export const BackgroundStyle = styled.div`
     left: 416px;
     top: 360px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle14 {
     position: absolute;
     left: 493px;
     top: 344px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle13 {
     position: absolute;
     left: -28px;
     top: 281px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle12 {
     position: absolute;
     left: 561px;
     top: 56px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle11 {
     position: absolute;
     left: 372.5px;
     top: 352px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle10 {
     position: absolute;
     left: 384px;
     top: 37px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle9 {
     position: absolute;
     left: 51px;
     top: 160px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
 
   .circle8 {
@@ -156,49 +156,49 @@ export const BackgroundStyle = styled.div`
     left: 50.5px;
     top: 37px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle7 {
     position: absolute;
     left: 77.5px;
     top: 58px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle6 {
     position: absolute;
     left: 575.5px;
     top: 94px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle5 {
     position: absolute;
     left: 562.5px;
     top: 202px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle4 {
     position: absolute;
     left: 233.5px;
     top: 10px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle3 {
     position: absolute;
     left: 322.5px;
     top: 319px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .circle2 {
     position: absolute;
     left: 66.5px;
     top: 297px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
 
   .circle1 {
@@ -206,7 +206,7 @@ export const BackgroundStyle = styled.div`
     left: 11.5px;
     top: 241px;
     opacity: 0;
-    animation: ${fadein} 0.5s 2s ease-in-out forwards;
+    animation: ${fadein} 3s 3s ease-in-out infinite;
   }
   .stroke3 {
     position: absolute;
@@ -226,32 +226,32 @@ export const BackgroundStyle = styled.div`
   #ring6 {
     stroke-dasharray: 1000;
     stroke-dashoffset: 400;
-    animation: ${dash} 3s linear forwards;
+    animation: ${dash} 3s linear infinite;
   }
   #ring5 {
     stroke-dasharray: 1000;
     stroke-dashoffset: 400;
-    animation: ${dash} 3s linear forwards;
+    animation: ${dash} 3s linear infinite;
   }
   #ring4 {
     stroke-dasharray: 2000;
     stroke-dashoffset: 1000;
-    animation: ${dash} 3s linear forwards;
+    animation: ${dash} 3s linear infinite;
   }
   #ring3 {
     stroke-dasharray: 1000;
     stroke-dashoffset: 400;
-    animation: ${dash} 3s linear forwards;
+    animation: ${dash} 3s linear infinite;
   }
   #ring2 {
     stroke-dasharray: 1000;
     stroke-dashoffset: 400;
-    animation: ${dash} 3s 1s linear forwards;
+    animation: ${dash} 3s 1s linear infinite;
   }
   #ring1 {
     stroke-dasharray: 1000;
     stroke-dashoffset: 400;
-    animation: ${dash} 3s 0.3s linear forwards;
+    animation: ${dash} 3s 0.3s linear infinite;
   }
   .ring6 {
     position: absolute;
