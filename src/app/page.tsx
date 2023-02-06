@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <>
       <S.Main>
-        <h3>Welcome to my Portfolio</h3>
         <S.ImgContainer>
           <Image
             src={profilePic}
