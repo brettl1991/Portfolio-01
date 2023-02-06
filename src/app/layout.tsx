@@ -17,7 +17,6 @@ export default function RootLayout({
           <GlobalStyle />
           <Navbar />
           {children}
-          <footer />
         </Box>
       </body>
     </html>
