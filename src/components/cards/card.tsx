@@ -2,11 +2,29 @@ import Image from "next/image";
 import profilePic from "public/profile.png";
 import * as S from "./card.style";
 
-const Card = () => {
+import * as T from "./card.type";
+
+const Card = ({
+  children,
+  $aspect,
+  $minWidth,
+  $color,
+  $position,
+  $shadow,
+  $hide,
+  $overflow,
+}: T.cardType) => {
   return (
-    <div>
-      <S.CardBox />
-      <S.CardBox />
+    <S.CardBox
+      $aspect={$aspect}
+      $minWidth={$minWidth}
+      $color={$color}
+      $position={$position}
+      $shadow={$shadow}
+      $hide={$hide}
+      $overflow={$overflow}
+    >
+      {children}
       {/* <S.Main>
               <S.ImgContainer>
                 <Image
@@ -17,7 +35,7 @@ const Card = () => {
                 />
               </S.ImgContainer>
             </S.Main> */}
-    </div>
+    </S.CardBox>
   );
 };
 

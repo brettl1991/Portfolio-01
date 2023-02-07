@@ -14,4 +14,12 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  input[type="radio"] {
+    display: none;
+
+    &:checked + div {
+      transform: translateX(0) translateY(16px);
+    }
+  } 
 `;
