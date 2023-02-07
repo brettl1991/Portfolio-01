@@ -1,8 +1,10 @@
 import * as S from "./background.style";
+import * as T from "./background.type";
 
-export const Background = () => {
+export const Background = ({ children }: T.backgroundType) => {
   return (
     <S.BackgroundStyle>
+      {children}
       <svg
         className="lines"
         width="1363"
