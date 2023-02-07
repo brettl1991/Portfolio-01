@@ -1,6 +1,6 @@
 "use client";
 
-import { Background, Box, Navbar } from "@/components";
+import { Background, Box, Card, Navbar } from "@/components";
 
 import { GlobalStyle } from "../style/global.style";
 
@@ -13,9 +13,11 @@ export default function RootLayout({
     <html>
       <body>
         <Background />
+        <GlobalStyle />
         <Box>
-          <GlobalStyle />
-          <Navbar />
+          <Card />
+          <Card />
+          {/* <Navbar /> */}
           {children}
         </Box>
       </body>
