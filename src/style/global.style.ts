@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   input[type="radio"] {
-    display: none;
+    /* display: none; */
 
     &:checked + div {
       transform: translateX(0) translateY(16px);

@@ -11,6 +11,20 @@ export default function RootLayout({}) {
         <Background />
         <GlobalStyle />
         <Box>
+          <Card>
+            <div>
+              <Label htmlFor="menu-1">click me 1</Label>
+            </div>
+            <div>
+              <Label htmlFor="menu-2">click me 2</Label>
+            </div>
+            <div>
+              <Label htmlFor="menu-3">click me 3</Label>
+            </div>
+            <div>
+              <Label htmlFor="menu-4">click me 4</Label>
+            </div>
+          </Card>
           <Card $overflow $minWidth={640} $aspect="1/1">
             <input type="radio" name="yeey" id="menu-1" />
             <Card $hide $position="absolute" $aspect="1/1" $color="red">
@@ -22,7 +36,7 @@ export default function RootLayout({}) {
               show
             </Card>
 
-            <input checked type="radio" name="yeey" id="menu-3" />
+            <input type="radio" name="yeey" id="menu-3" />
             <Card $hide $position="absolute" $aspect="1/1" $color="blue">
               hhhh
             </Card>
@@ -36,21 +50,6 @@ export default function RootLayout({}) {
             15/21
           </Card>
         </Box>
-
-        <Card>
-          <div>
-            <Label htmlFor="menu-1">click me 1</Label>
-          </div>
-          <div>
-            <Label htmlFor="menu-2">click me 2</Label>
-          </div>
-          <div>
-            <Label htmlFor="menu-3">click me 3</Label>
-          </div>
-          <div>
-            <Label htmlFor="menu-4">click me 4</Label>
-          </div>
-        </Card>
       </body>
     </html>
   );
