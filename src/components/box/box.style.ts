@@ -5,7 +5,7 @@ export const Box = styled.div`
   position: relative;
   justify-content: flex-start;
   height: 60vh;
-  width: 60%;
+  width: 65%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 8px;

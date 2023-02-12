@@ -14,7 +14,7 @@ const Navbar = () => {
   const path = usePathname();
 
   return (
-    <>
+    <S.NavBarContainer>
       <S.NavBar>
         {MENU_LIST.map(({ href, text }) => (
           <S.NavBarLink key={text} href={href} $pathName={path}>
@@ -22,7 +22,7 @@ const Navbar = () => {
           </S.NavBarLink>
         ))}
       </S.NavBar>
-    </>
+    </S.NavBarContainer>
   );
 };
 

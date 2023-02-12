@@ -3,9 +3,9 @@ import * as T from "./card.type";
 
 export const CardBox = styled.div<T.cardType>`
   transition: 150ms ease-in-out;
-  aspect-ratio: ${({ $aspect = "15/21" }: T.cardType) => $aspect};
+  aspect-ratio: ${({ $aspect = "6/9" }: T.cardType) => $aspect};
   min-width: ${({ $minWidth = 100 }: T.cardType) => `${$minWidth}px`};
-  background-color: ${({ $color = "blue" }: T.cardType) => $color};
+  background-color: ${({ $color = "#F06292" }: T.cardType) => $color};
   /* min-width: 480px; // 644 */
   /* height: 100%; */
   inset: 0;
