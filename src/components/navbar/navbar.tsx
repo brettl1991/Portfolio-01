@@ -4,7 +4,7 @@ import * as S from "./navbar.style";
 import { usePathname } from "next/navigation";
 
 const MENU_LIST = [
-  { text: "About Me", href: "/" },
+  { text: "About Me", href: "/about" },
   { text: "Resume", href: "/resume" },
   { text: "Projects", href: "/projects" },
   { text: "Blog", href: "/blog" },
