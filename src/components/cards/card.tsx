@@ -25,16 +25,11 @@ const Card = ({
       $overflow={$overflow}
     >
       {children}
-      {/* <S.Main>
-              <S.ImgContainer>
-                <Image
-                  src={profilePic}
-                  alt="Picture of the author"
-                  width={100}
-                  height={100}
-                />
-              </S.ImgContainer>
-            </S.Main> */}
+      <S.Main>
+        <S.ImgContainer>
+          <Image src={profilePic} alt="Picture of the author" />
+        </S.ImgContainer>
+      </S.Main>
     </S.CardBox>
   );
 };
