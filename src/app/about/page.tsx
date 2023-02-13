@@ -1,7 +1,15 @@
 "use client";
 
+import { dataText } from "@/data";
+
 const About = () => {
-  return <div>About</div>;
+  // console.log("Json jhg:", JSON.stringify(dataText));
+
+  return (
+    <div>
+      <div>{dataText.about.head.text}</div>
+    </div>
+  );
 };
 
 export default About;
