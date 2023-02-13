@@ -14,6 +14,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Navbar />
         <Box>
           <Card />
+          {children}
         </Box>
       </body>
     </html>
