@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Typewriter = styled.div`
-  ::after {
+  &.end-cursor:after {
     content: "|";
-    font-weight: 300;
+  }
+  &.end-cursor.blinking:after {
     animation: blink 1s step-start infinite;
   }
 

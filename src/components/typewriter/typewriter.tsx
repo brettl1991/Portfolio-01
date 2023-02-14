@@ -1,12 +1,21 @@
 import React from "react";
 import * as S from "./typewriter.style";
 import * as T from "./typewriter.type";
-import { useTypeWriter } from "./useTypeWriter";
+import { TypePhase, useTypeWriter } from "./useTypeWriter";
+import cn from "classnames";
 
 const Typewriter = ({ textsToWrite }: T.typewriterType) => {
-  const { cardSubtitle, selectedSubtitle } = useTypeWriter(textsToWrite);
+  const { cardSubtitle, selectedSubtitle, phase } = useTypeWriter(textsToWrite);
   return (
-    <S.Typewriter aria-label={selectedSubtitle}>{cardSubtitle}</S.Typewriter>
+    <S.Typewriter
+      className={cn({
+        ["end-cursor"]: phase !== TypePhase.Deleting,
+        ["blinking"]: phase === TypePhase.Pausing,
+      })}
+      aria-label={selectedSubtitle}
+    >
+      {cardSubtitle}
+    </S.Typewriter>
   );
 };
 

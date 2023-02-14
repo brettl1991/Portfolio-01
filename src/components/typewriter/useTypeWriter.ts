@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-enum Phase {
+export enum TypePhase {
   Typing,
   Pausing,
   Deleting,
@@ -14,20 +14,21 @@ export const useTypeWriter = (
 ): {
   cardSubtitle: string;
   selectedSubtitle: string;
+  phase: TypePhase;
 } => {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [phase, setPhase] = useState(Phase.Typing);
+  const [phase, setPhase] = useState(TypePhase.Typing);
   const [cardSubtitle, setCardSubtitle] = useState("");
   useEffect(() => {
     switch (phase) {
-      case Phase.Typing: {
+      case TypePhase.Typing: {
         const nextTypedText = textsToWrite[selectedIndex].slice(
           0,
           cardSubtitle.length + 1
         );
 
         if (nextTypedText === cardSubtitle) {
-          setPhase(Phase.Pausing);
+          setPhase(TypePhase.Pausing);
           return;
         }
 
@@ -37,11 +38,11 @@ export const useTypeWriter = (
 
         return () => clearTimeout(timeout);
       }
-      case Phase.Deleting: {
+      case TypePhase.Deleting: {
         if (!cardSubtitle) {
           const nextIndex = selectedIndex + 1;
           setSelectedIndex(textsToWrite[nextIndex] ? nextIndex : 0);
-          setPhase(Phase.Typing);
+          setPhase(TypePhase.Typing);
           return;
         }
 
@@ -55,14 +56,14 @@ export const useTypeWriter = (
 
         return () => clearTimeout(timeout);
       }
-      case Phase.Pausing:
+      case TypePhase.Pausing:
       default:
         const timeout = setTimeout(() => {
-          setPhase(Phase.Deleting);
+          setPhase(TypePhase.Deleting);
         }, PAUSE_MS);
         return () => clearTimeout(timeout);
     }
   }, [cardSubtitle, textsToWrite, phase, selectedIndex]);
 
-  return { cardSubtitle, selectedSubtitle: textsToWrite[selectedIndex] };
+  return { cardSubtitle, phase, selectedSubtitle: textsToWrite[selectedIndex] };
 };
