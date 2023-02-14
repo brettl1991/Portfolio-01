@@ -1,10 +1,11 @@
+import Link from "next/link";
 import styled from "styled-components";
 import * as T from "./card.type";
 
 export const CardBox = styled.div<T.cardType>`
-  aspect-ratio: ${({ $aspect = "6/9" }: T.cardType) => $aspect};
+  aspect-ratio: ${({ $aspect = "5/9" }: T.cardType) => $aspect};
   /* min-width: ${({ $minWidth = 100 }: T.cardType) => `${$minWidth}px`}; */
-  background-color: ${({ $color = "#F06292" }: T.cardType) => $color};
+  background-color: ${({ $color = "#fff" }: T.cardType) => $color};
   /* min-width: 480px; // 644 */
   /* height: 100%; */
 
@@ -17,40 +18,61 @@ export const CardBox = styled.div<T.cardType>`
 export const ImgContainer = styled.div`
   width: 100%;
 
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
   img {
     width: 100%;
     height: auto;
   }
-`;
 
-export const Main = styled.div`
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-
-  ::before {
+  ::before,
+  ::after {
     content: "";
     position: absolute;
-    bottom: -50%;
+    bottom: -85%;
     width: 100%;
     height: 90%;
     background: #fff;
+  }
+  ::before {
     transform: rotate(12deg);
     left: -25%;
   }
 
   ::after {
-    content: "";
-    position: absolute;
     left: auto;
-    bottom: -50%;
-    width: 100%;
-    height: 90%;
-    background: #fff;
     right: -25%;
     transform: rotate(-12deg);
   }
+`;
+
+export const CardSection = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.5rem;
+  font-weight: 400;
+  padding: 0.5rem;
+
+  div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+`;
+
+export const LinkStyle = styled(Link)`
+  width: 100%;
+  font-size: 0.5rem;
+  color: #323232;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
 `;

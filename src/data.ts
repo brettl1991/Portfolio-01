@@ -2,7 +2,10 @@ export const dataText = {
   card: {
     title: "Agnes Brettl",
     subtitle: ["Frontend Developer", "Freelancer", "Web Designer"],
-    buttonList: ["download cv", "contact me"],
+    buttonList: [
+      { text: "download cv", href: "", download: true },
+      { text: "contact me", href: "", download: false },
+    ],
   },
 
   about: {
