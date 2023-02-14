@@ -4,8 +4,10 @@ import * as T from "./typewriter.type";
 import { useTypeWriter } from "./useTypeWriter";
 
 const Typewriter = ({ textsToWrite }: T.typewriterType) => {
-  const text = useTypeWriter(textsToWrite);
-  return <S.Typewriter>{text}</S.Typewriter>;
+  const { cardSubtitle, selectedSubtitle } = useTypeWriter(textsToWrite);
+  return (
+    <S.Typewriter aria-label={selectedSubtitle}>{cardSubtitle}</S.Typewriter>
+  );
 };
 
 export default Typewriter;

@@ -9,7 +9,12 @@ const TYPING_INTERVAL = 150;
 const PAUSE_MS = 3000;
 const DELETING_INTERVAL = 50;
 
-export const useTypeWriter = (textsToWrite: string[]) => {
+export const useTypeWriter = (
+  textsToWrite: string[]
+): {
+  cardSubtitle: string;
+  selectedSubtitle: string;
+} => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [phase, setPhase] = useState(Phase.Typing);
   const [cardSubtitle, setCardSubtitle] = useState("");
@@ -59,5 +64,5 @@ export const useTypeWriter = (textsToWrite: string[]) => {
     }
   }, [cardSubtitle, textsToWrite, phase, selectedIndex]);
 
-  return cardSubtitle;
+  return { cardSubtitle, selectedSubtitle: textsToWrite[selectedIndex] };
 };
