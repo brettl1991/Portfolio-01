@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { Poppins } from "@next/font/google";
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -7,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     align-items: center;
     height: 100vh;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Poppins;
     font-size: 16px;
     color: #6B7688;
     background-color: #E8EEF4;
